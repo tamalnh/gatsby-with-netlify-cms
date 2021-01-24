@@ -3,7 +3,7 @@ backend:
   name: git-gateway
   repo: tamalnh/gatsby-with-netlify-cms
   branch: main
-  
+
 media_folder: static/img
 public_folder: /img
 
@@ -19,4 +19,22 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - { name: thumb_image, label: Features Image, widget: image }
       - { name: body, label: Body, widget: markdown }
+ 
+  - name: settings
+    label: Settings
+    files: 
+    - name: contact_info
+      label: Contact Info
+      file: site/settings/contact_info.json
+      fields: 
+        - { name: phone, label: Phone, widgets: "string" }
+        - { name: email, label: Email, widgets: "string" }
+        - name: address 
+          label: Address, 
+          widgets: "object"
+          fields: 
+          - { name: city, label: City, widgets: "string"}
+          - { name: street, label: Street, widgets: "string"}
+          

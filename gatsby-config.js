@@ -72,7 +72,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
-        // enableIdentityWidget: true,
+        enableIdentityWidget: true,
       }
     },
     `gatsby-plugin-react-helmet`, 
