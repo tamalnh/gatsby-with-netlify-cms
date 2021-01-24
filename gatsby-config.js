@@ -69,7 +69,12 @@ module.exports = {
         icon: `content/assets/gatsby-icon.png`,
       },
     }, 
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        // enableIdentityWidget: true,
+      }
+    },
     `gatsby-plugin-react-helmet`, 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

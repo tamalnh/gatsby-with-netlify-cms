@@ -2,8 +2,11 @@
 backend:
   name: git-gateway
   repo: tamalnh/gatsby-with-netlify-cms
+  branch: main
+  
 media_folder: static/img
 public_folder: /img
+
 collections:
   - name: blog
     label: Blog
